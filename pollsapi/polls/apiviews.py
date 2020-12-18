@@ -18,3 +18,4 @@ class PollDetail(APIView):
         poll = get_object_or_404(Poll, pk=pk)
         data = PollSerializer(poll).data
         return Response(data)
+:q
